@@ -182,7 +182,10 @@
             			});
 
                         $('.activityStreamIcon').click(function(e){
-            				notifications.markActivityStreamAsRead();
+
+					        if ($('.activityStreamContainer').css('display') == 'block') {
+            				    notifications.markActivityStreamAsRead();
+            		        }
             				var position = $('.activityStreamIcon').position();
             				$('.activityStreamContainer').css({ left: position.left - 150 + "px", top: position.top + 30 + "px"});
             				$('.activityStreamContainer').toggle();
@@ -440,10 +443,7 @@
             <a href="#" class="activityStreamIcon">
         	    <i></i>
           	</a>
-          	<div class="activityStream">
-          	    <div class="activityStreamHeader">${commonTranslations["qcadooView.button.help"] }</div>
-        	    <div class="activityStreamContainer">
-        	    </div>
+        	<div class="activityStreamContainer">
         	</div>
         </div>
 
