@@ -89,6 +89,7 @@
 	opacity: 0;
 	display: none;
 }
+
 .userMenuBackdoor.open{
 	display: block;
 }
@@ -223,6 +224,7 @@
 	height: 8px;
 	background: url('/qcadooView/public/css/core/menu/images-new/header-dropdown-arrow.png');
 }
+
 .logoDropdownBoxContent{
 	position: absolute;
 	top: 100%;
@@ -1261,4 +1263,70 @@ ul.ribbon_list li.twoB.enabled ul li a.twoB_down:hover {
 .ribbonGroupsDropdown .ribbon_list {
 	float: none;
 	display: inline-block;
+}
+
+.activityStreamMenu {
+	float: right;
+    padding-top: 13px;
+}
+
+.activityStreamMenu .activityStreamIcon {
+	display: block;
+}
+
+.activityStreamMenu .activityStreamIcon i {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: url('/qcadooView/public/css/core/menu/images-new/bell-light-grey-64.png');
+	background-size: 24px 24px;
+}
+.activityStreamMenu .activityStreamActive i {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: url('/qcadooView/public/css/core/menu/images-new/bell-orange-64.png');
+	background-size: 24px 24px;
+}
+
+
+.activityStreamMenu .activityStreamContainer {
+    overflow: auto;
+    width: 300px;
+    height: 400px;
+    border: 1px solid #000000;
+    display: none;
+    position: fixed;
+    background: white;
+}
+
+.activityStreamMenu .activityStreamContainer .productionTracking {
+    border-bottom: solid #9b9b9b 1px;
+}
+
+.activityStreamMenu .activityStreamContainer .other {
+    border-bottom: solid #9b9b9b 1px;
+}
+.activityStreamContainer {
+	font-size: 11px;
+	color: #555555;
+	background: #fafafa;
+    border: solid #9b9b9b 1px;
+}
+.activityStreamContainer div {
+    padding: 10px;
+}
+.activityStreamContainer p {
+	text-transform: uppercase;
+    text-align: center;
+	display: block;
+}
+.activityStreamContainer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2fa917;
+}
+.activityStreamContainer .newMessage {
+    color: #9B9B9B;
+    background: #f2f2f2;
 }
